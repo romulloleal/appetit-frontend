@@ -1,6 +1,13 @@
 <!DOCTYPE html><html><head><meta charset="utf-8"><title>Appetit.md</title><style></style></head><body id="preview">
 <h1 class="code-line" data-line-start=0 data-line-end=1><a id="Appetit_0"></a>Appetit</h1>
 <p class="has-line-data" data-line-start="2" data-line-end="3">Aplicação Front end de uma padaria</p>
+  <h3>Link para testes:</h3>
+  <a href="https://appetit-frontend.herokuapp.com/">Clique aqui</a>
+  <h3>Mini API utilizada somente para leitura de dados</h3>
+  <a href="https://appetit-backend.herokuapp.com/customers">Clientes</a>
+  <a href="https://appetit-backend.herokuapp.com/orders">Pedidos</a>
+  <a href="https://appetit-backend.herokuapp.com/products">Produtos</a>
+  
 <h1 class="code-line" data-line-start=4 data-line-end=5><a id="SETUP_4"></a>SETUP</h1>
 <ul>
 <li class="has-line-data" data-line-start="5" data-line-end="6">Para logar basta informar qualquer email e senha, não foi feita autenticação de login</li>
