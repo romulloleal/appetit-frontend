@@ -1,0 +1,34 @@
+.login-container {
+  max-width: 432px;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.login-container a {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.88);
+}
+
+.login-container form, .login-container button {
+  margin-top: 10%;
+}
+
+.login-container h3, .login-container input {
+  margin-bottom: 5%;
+}
+
+.login-container p {
+  margin-bottom: 10%;
+}
+
+.login-container input:focus-within {
+  border: 2px solid #FF8822;
+}

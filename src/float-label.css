@@ -1,0 +1,44 @@
+.float-label {
+  display: block;
+  position: relative;
+}
+
+.float-label label, .float-label span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  cursor: text;
+  opacity: 1;
+  transition: all .2s;
+  top: -.5em;
+  left: 15px;
+  z-index: 3;
+  line-height: 1;
+}
+
+.float-label label::after, .float-label span::after {
+  content: "";
+  position: absolute;
+  background: white;
+  height: 3px;
+  top: 50%;
+  left: -.2em;
+  right: -.2em;
+  z-index: -1;
+}
+
+.float-label input::placeholder {
+  opacity: 0;
+}
+
+.float-label input:placeholder-shown:not(:focus)+* {
+  top: 25%;
+}
+
+.float-label input:focus+* {
+  color: #FF8822;
+}
+
+.float-label input:required {
+  box-shadow: none;
+}

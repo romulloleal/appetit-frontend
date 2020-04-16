@@ -1,0 +1,258 @@
+.sales {
+  grid-column: 3 / 9;
+  margin-bottom: 2%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.sales .order-track {
+  grid-column: 1 / 3;
+  width: 37.5%;
+  background-color: #ffffff;
+  height: 100vh;
+  position: fixed;
+  padding: 30px 40px 0 40px;
+}
+
+.sales .cart {
+  grid-column: 3 / 5;
+}
+
+.cart .only-mobile {
+  display: none;
+}
+
+.sales .products {
+  padding: 9% 4% 0 4%;
+  position: relative;
+  min-height: 100%;
+}
+
+.sales .notes {
+  padding: 6% 4% 0 4%;
+  position: relative;
+  min-height: 100%;
+  padding-bottom: 100px;
+}
+
+.order-track .chef {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20%;
+}
+
+.products .products-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-bottom: 56px;
+}
+
+.products-list .product-details {
+  width: 100%;
+  height: 56px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  margin-bottom: 2%;
+}
+
+.product-details .product-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 15px;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.notes .product {
+  width: 100%;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  margin: 5% 0;
+}
+
+.product .product-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 15px;
+}
+
+.notes .product-options {
+  height: 56px;
+  background: #ffffff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: start;
+  margin: 3% 0;
+  position: relative;
+}
+
+.product-options input[type=radio] {
+  width: 100%;
+  height: 56px;
+  opacity: 0;
+  cursor: pointer;
+  position: absolute;
+}
+
+.product-options label {
+  cursor: pointer;
+}
+
+.product-options input[type="radio"]+label:before {
+  border: 2px solid rgba(0, 0, 0, 0.56);
+  content: "\00a0";
+  display: inline-block;
+  font: 15px/1em sans-serif;
+  height: 18px;
+  width: 18px;
+  margin: 0 19px;
+  border-radius: 100%;
+}
+
+.product-options input[type="radio"]:checked+label:before {
+  border: 2px solid #FF8822;
+  color: #FF8822;
+  content: "\2713";
+  text-align: center;
+}
+
+.notes .separator {
+  height: 8px;
+  position: relative;
+  background: rgba(0, 0, 0, 0.08);
+  margin-bottom: 3%;
+}
+
+.notes .add-product {
+  height: 68px;
+  width: 100%;
+  box-shadow: 0px -10px 10px -10px rgba(0, 0, 0, 0.25);
+  position: absolute;
+  bottom: 0;
+  left: 0px;
+  display: flex;
+  align-items: center;
+  padding: 0 4%;
+  justify-content: space-between;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.add-product .button-add {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.button-add span {
+  padding: 0 20px;
+}
+
+.add-remove {
+  cursor: pointer;
+}
+
+.add-product button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.progress-bar {
+  margin: 3% 0 5% 0;
+}
+
+.box {
+  box-shadow: 0px -10px 10px -10px rgba(0, 0, 0, 0.2);
+  color: #FFFFFF;
+  background: #FF8822;
+  width: 100%;
+  height: 56px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+
+.box .avancar {
+  display: flex;
+  align-items: center;
+}
+
+.progress {
+  height: 12px;
+  position: relative;
+  background: rgba(0, 0, 0, 0.08);
+  border-radius: 5px;
+}
+
+.progress .bar {
+  display: block;
+  height: 100%;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-color: rgb(43, 194, 83);
+  background: #FF8822;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+
+.feedback {
+  grid-column: 3/9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10%;
+}
+
+.feedback .options {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (max-width: 1000px) {
+  .order-track {
+    display: none;
+  }
+  .sales {
+    grid-column: 1/9;
+  }
+  .sales .cart {
+    grid-column: 1/5;
+  }
+  .cart .only-mobile {
+    display: inline-block;
+    /* position: absolute; */
+    margin: 3% 4%;
+  }
+  .feedback {
+    grid-column: 1/9;
+    margin-top: 30%;
+  }
+  .feedback .options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
